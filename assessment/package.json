@@ -1,17 +1,17 @@
 {
-  "name": "blog_app",
+  "name": "chatapp",
   "version": "1.0.0",
-  "description": "Blog Application Tests",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "e2e": "cypress run",
-    "cypress:open": "cypress open"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "cypress": "^13.11.0",
-    "mochawesome": "^7.1.3"
-  },
-  "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+    "cypress": "^13.3.1",
+    "cypress-real-events": "^1.12.0",
+    "dotenv": "^16.5.0"
   }
 }
