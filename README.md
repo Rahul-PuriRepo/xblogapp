@@ -140,7 +140,7 @@ The frontend runs on:
 http://localhost:3000
 ```
 
-Production Deployment
+## Production Deployment
 
 The application is deployed using:
 
@@ -156,7 +156,7 @@ Frontend: https://xblogapp.vercel.app/
 Backend API: https://xblogapp-jz82.onrender.com/
 ```
 
-Testing
+## Testing
 
 The project includes Cypress assessment tests.
 
@@ -167,7 +167,7 @@ npx cypress run --spec "cypress/e2e/spec.cy.js"
 
 The final assessment completed successfully with all 25 tests passing.
 
-Security
+## Security
 ```
 Passwords are hashed using bcryptjs before being stored.
 JWT is used for authentication and protected routes.
@@ -176,7 +176,7 @@ CORS is configured on the backend.
 Private environment variables should not be exposed in public repositories.
 ```
 
-Author
+## Author
 
 Rahul Puri
 
