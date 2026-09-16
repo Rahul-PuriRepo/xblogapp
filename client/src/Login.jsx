@@ -46,20 +46,24 @@ function Login({ onLogin }) {
       <h1>Login</h1>
 
       <form className="auth-form" onSubmit={handleSubmit}>
-        <input
-          name="email"
-          type="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-        />
+        <label htmlFor="email">Email</label>
+            <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+            />
 
+        <label htmlFor="password">Password</label>
         <input
-          name="password"
-          type="password"
-          placeholder="Password"
-          value={formData.password}
-          onChange={handleChange}
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Password"
+            value={formData.password}
+            onChange={handleChange}
         />
 
         <button type="submit">Login</button>

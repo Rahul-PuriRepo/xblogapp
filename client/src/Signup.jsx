@@ -46,28 +46,34 @@ function Signup({ onSignup }) {
       <h1>Signup</h1>
 
       <form className="auth-form" onSubmit={handleSubmit}>
+        <label htmlFor="name">Name</label>
         <input
-          name="name"
-          type="text"
-          placeholder="Name"
-          value={formData.name}
-          onChange={handleChange}
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Name"
+            value={formData.name}
+            onChange={handleChange}
         />
 
+        <label htmlFor="email">Email</label>
         <input
-          name="email"
-          type="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
         />
 
+        <label htmlFor="password">Password</label>
         <input
-          name="password"
-          type="password"
-          placeholder="Password"
-          value={formData.password}
-          onChange={handleChange}
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Password"
+            value={formData.password}
+            onChange={handleChange}
         />
 
         <button type="submit">Signup</button>
