@@ -83,6 +83,7 @@ XBlogApp/
 │   ├── server.js
 │   └── package.json
 └── README.md
+```
 
 ## Installation
 
@@ -91,6 +92,7 @@ XBlogApp/
 ```bash
 git clone https://github.com/Rahul-PuriRepo/xblogapp.git
 cd xblogapp
+```
 
 ### 2. Install frontend dependencies
 cd client
@@ -100,12 +102,12 @@ npm install
 cd server
 npm install
 
-### 3. Environment Variables
+### 4. Environment Variables
 Create a .env file inside the server directory.
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 
-### 4. Running the application locally
+### 5. Running the application locally
 
 Start the Backend
 
