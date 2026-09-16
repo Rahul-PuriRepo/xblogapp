@@ -6,7 +6,7 @@ function Profile() {
   useEffect(() => {
     const token = localStorage.getItem("token");
 
-    fetch("http://localhost:5000/api/users/me", {
+    fetch("https://xblogapp-jz82.onrender.com/api/users/me", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
