@@ -95,33 +95,50 @@ cd xblogapp
 ```
 
 ### 2. Install frontend dependencies
+
+```bash
 cd client
 npm install
+```
 
 ### 3. Install backend dependencies
+```bash
 cd server
 npm install
+```
 
 ### 4. Environment Variables
+```
 Create a .env file inside the server directory.
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
+```
 
 ### 5. Running the application locally
 
 Start the Backend
 
 From the server directory:
+```
 npm start
+```
 
-The backend runs on: http://localhost:5000
+The backend runs on: 
+```
+http://localhost:5000
+```
 
 Start the Frontend
 
 From the client directory:
+```
 npm run dev
+```
 
-The frontend runs on: http://localhost:3000
+The frontend runs on: 
+```
+http://localhost:3000
+```
 
 Production Deployment
 
@@ -134,24 +151,30 @@ MongoDB Atlas for the database
 The production frontend communicates with the deployed Render backend API.
 
 Production Links
+```
 Frontend: https://xblogapp.vercel.app/
 Backend API: https://xblogapp-jz82.onrender.com/
+```
+
 Testing
 
 The project includes Cypress assessment tests.
 
 Run the complete assessment from the assessment directory:
+```
 npx cypress run --spec "cypress/e2e/spec.cy.js"
+```
 
 The final assessment completed successfully with all 25 tests passing.
 
 Security
+```
 Passwords are hashed using bcryptjs before being stored.
 JWT is used for authentication and protected routes.
 Database credentials and JWT secrets are stored in environment variables.
 CORS is configured on the backend.
 Private environment variables should not be exposed in public repositories.
-
+```
 
 Author
 
